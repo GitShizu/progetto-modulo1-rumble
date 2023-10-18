@@ -131,10 +131,37 @@ aside>section>h3 {
 #ft {
     display: flex;
     background-color: var(--light-gray);
+    padding: 0 2rem;
 }
 
 #ft-caption {
     display: flex;
+}
+
+.caption-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.video-row-container {
+    background-color: var(--gray);
+    padding: 1.5rem 1.5rem;
+}
+
+.video-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.row-head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.img-container>img {
+    border-radius: 0.75rem;
 }
 
 /* ---------------------------Footer--------------------------- */
