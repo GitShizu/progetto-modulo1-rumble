@@ -132,21 +132,39 @@ body>header>section {
 body>nav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    gap: 2rem;
 }
 
 .tag {
     border-radius: 1em;
     padding: 0.5em 1em;
     font-size: 0.85rem;
+    
 }
 
 .text-tag {
     background-color: var(--light-gray);
+    text-wrap: nowrap;
 }
 
+#live {
+    background-color: #F23160;
+    color: white;
+}
+
+#slap {
+    background-color: #002CFE;
+}
+
+#slap, #sls, #nitro, #ufc {
+    min-width: 4rem;
+}
+
+#ufc {
+    background-color: #D20A0A;
+}
 /* ---------------------------Sidebar-------------------------- */
 
 /* To do: check for redundancies */
