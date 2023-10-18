@@ -62,6 +62,14 @@ a {
     border-radius: 50%;
 }
 
+.btn {
+    background-color: white;
+    border: 0.1em solid #74CC1D;
+    border-radius: 1.25em;
+    padding: 0.5em 1em;
+    font-size: 0.85rem;
+}
+
 /* ---------------------------Header--------------------------- */
 
 body>header {
@@ -74,7 +82,51 @@ body>header>section {
     display: flex;
     align-items: center;
 }
+#logo-section, #signup-signin {
+    gap: 2rem;
+}
 
+#search {
+    padding: 0.25rem 0.5rem;
+}
+
+#search>input {
+    width: 35vw;
+    height: 35px;
+    border: 1px solid var(--gray);
+    border-right: none;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+#search>button {
+    height: 35px;
+    border: 1px solid var(--gray);
+    border-left:none;
+    background-color: transparent; 
+    margin-left: auto;
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+}
+
+#search>button>img {
+    height: 100%;
+}
+
+#signup-signin button {
+    font-weight: 600;
+}
+
+#signup-signin button:first-child {
+    border: none;
+}
+
+#signup-signin button:last-child {
+    padding: 1rem 1rem;
+    border-radius: 2em;
+}
 /* ---------------------------Navbar--------------------------- */
 
 body>nav {
@@ -127,6 +179,10 @@ aside>section>h3 {
     font-size: 0.75rem;
 }
 /* ------------------------Main Section------------------------- */
+
+body>main {
+    overflow: auto;
+}
 
 #ft {
     display: flex;
@@ -184,11 +240,11 @@ figure {
 
 /* ---------------------------Footer--------------------------- */
 
-body>footer {
+main>footer {
     display: flex;
     justify-content: space-between;
 }
 
-body>footer div:first-child {
+main>footer div:first-child {
    visibility: hidden;
 }
