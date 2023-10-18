@@ -1,4 +1,4 @@
-/* ---------------------------Generic--------------------------- */
+/* ---------------------------Generic/Layout--------------------------- */
 
 :root {
     font-size: 16px;
@@ -15,3 +15,40 @@ img {
 }
 
 
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "head head"
+    "side nav"
+    "side main"
+    "side foot"
+    ;
+    grid-template-columns: 63px 1fr;
+    grid-template-rows: 70px 60px 1fr 46px;
+}
+
+body>header {
+    grid-area: head;
+    background-color: red;
+}
+
+body>aside {
+    grid-area: side;
+    background-color: aquamarine;
+}
+
+body>nav {
+    grid-area: nav;
+    background-color: blue;
+}
+
+body>main {
+    grid-area: main;
+    background-color: gray;
+}
+
+body>footer {
+    grid-area: foot;
+    background-color: aqua;
+}
