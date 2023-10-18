@@ -67,4 +67,13 @@ body>header>section {
     align-items: center;
 }
 
+/* ---------------------------Footer--------------------------- */
 
+body>footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+body>footer div:first-child {
+   visibility: hidden;
+}
