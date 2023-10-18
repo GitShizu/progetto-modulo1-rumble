@@ -170,8 +170,9 @@ body>nav {
 /* To do: check for redundancies */
 
 body>aside {
-    overflow: auto;
+    overflow: scroll;
     width: 80px;
+    padding: 0 12.5%;
 }
 
 body>aside>section {
@@ -179,14 +180,13 @@ body>aside>section {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 1rem 10%;
+    padding: 1rem 0;
 }
 
 body>aside>section>a {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
 }
 a>span {
     font-size: 0.5rem;
@@ -294,3 +294,6 @@ main>footer>div:nth-child(2)>a {
     font-size: 0.85rem;
     font-weight: 600;
 }
+
+/* ------------------------Breakpoints------------------------- */
+
