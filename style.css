@@ -153,6 +153,7 @@ body>nav {
 
 body>aside {
     overflow: auto;
+    width: 80px;
 }
 
 body>aside>section {
@@ -175,13 +176,16 @@ a>span {
 }
 
 aside>section>h3 {
-
     font-size: 0.75rem;
+}
+
+aside::-webkit-scrollbar {
+    color: transparent;
 }
 /* ------------------------Main Section------------------------- */
 
 body>main {
-    overflow: auto;
+    overflow-y: auto;
 }
 
 #ft {
@@ -247,4 +251,8 @@ main>footer {
 
 main>footer div:first-child {
    visibility: hidden;
+}
+main>footer>div:nth-child(2)>a {
+    font-size: 0.85rem;
+    font-weight: 600;
 }
