@@ -130,7 +130,6 @@ body>header>section {
 /* ---------------------------Navbar--------------------------- */
 
 body>nav {
-    width: 100%;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -172,6 +171,7 @@ body>nav {
 body>aside {
     overflow: scroll;
     width: 80px;
+    /* height: 100vh; */
     padding: 0 12.5%;
 }
 
@@ -206,11 +206,22 @@ body>main {
     overflow-y: auto;
 }
 
+figure>strong {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 #ft {
     display: flex;
     background-color: var(--light-gray);
     padding: 0 2rem;
     gap: 3rem;
+}
+#ft-img-container {
+    width: 45%;
 }
 
 #ft-caption {
@@ -249,7 +260,7 @@ body>main {
 }
 
 #tlc-row {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(9, 1fr);
 }
 
 .tlc-caption, #ft-caption div:last-child {
@@ -261,7 +272,7 @@ body>main {
 }
 
 .video-row {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .row-head {
@@ -288,7 +299,11 @@ main>footer {
 }
 
 main>footer div:first-child {
-   visibility: hidden;
+   display: none;
+}
+
+main>footer div:first-child>a>img {
+    width: 50px;
 }
 main>footer>div:nth-child(2)>a {
     font-size: 0.85rem;
@@ -297,3 +312,37 @@ main>footer>div:nth-child(2)>a {
 
 /* ------------------------Breakpoints------------------------- */
 
+@media screen and (max-width:960px) {
+    .tablet-hide {
+        display:none
+    }
+
+    #tlc-row {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .video-row {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #ft, .video-row-container, body>nav {
+        padding: 1.5rem 1rem;
+    }
+
+    main>footer div:first-child {
+        display: unset;
+     }
+
+     body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "foot";
+     }
+}
+
+@media screen and (max-width: 640) {
+    
+}
