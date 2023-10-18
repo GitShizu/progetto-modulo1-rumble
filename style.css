@@ -139,8 +139,7 @@ body>nav {
 .tag {
     border-radius: 1em;
     padding: 0.5em 1em;
-    font-size: 0.85rem;
-    
+    font-size: 0.85rem;    
 }
 
 .text-tag {
@@ -148,21 +147,26 @@ body>nav {
     text-wrap: nowrap;
 }
 
-#live {
+.live {
     background-color: #F23160;
     color: white;
 }
 
-#slap {
+.slap {
     background-color: #002CFE;
 }
 
-#slap, #sls, #nitro, #ufc {
+.slap, .sls, .nitro, .ufc, .text-tag {
     min-width: 4rem;
 }
 
-#ufc {
+.ufc {
     background-color: #D20A0A;
+}
+
+.tag:hover {
+    background-color: rgb(66, 65, 65);
+    color: white;
 }
 /* ---------------------------Sidebar-------------------------- */
 
