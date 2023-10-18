@@ -3,6 +3,8 @@
 :root {
     font-size: 16px;
     font-family: sans-serif;
+    --gray: #E9EBEE;
+    --light-gray: #F3F5F8;
 }
 
 *{
@@ -43,7 +45,6 @@ body>nav {
 
 body>main {
     grid-area: main;
-    background-color: gray;
 }
 
 body>footer {
@@ -52,13 +53,13 @@ body>footer {
 
 /* --------------------------Generic--------------------------- */
 
-:root {
-    --gray: #E9EBEE;
-    --light-gray: #F3F5F8;
-}
 a {
     text-decoration: none;
     color: black;
+}
+
+.profile-pic>img {
+    border-radius: 50%;
 }
 
 /* ---------------------------Header--------------------------- */
@@ -125,11 +126,15 @@ aside>section>h3 {
 
     font-size: 0.75rem;
 }
+/* ------------------------Main Section------------------------- */
 
-.profile-pic>img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+#ft {
+    display: flex;
+    background-color: var(--light-gray);
+}
+
+#ft-caption {
+    display: flex;
 }
 
 /* ---------------------------Footer--------------------------- */
