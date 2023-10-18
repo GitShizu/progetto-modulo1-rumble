@@ -140,6 +140,7 @@ aside>section>h3 {
 
 .caption-container {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -148,10 +149,21 @@ aside>section>h3 {
     padding: 1.5rem 1.5rem;
 }
 
-.video-row {
+.video-row, #tlc-row {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
+}
+
+#tlc-row {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.tlc-caption {
+    font-size: 0.75rem;
+}
+
+.video-row {
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .row-head {
@@ -162,6 +174,12 @@ aside>section>h3 {
 
 .img-container>img {
     border-radius: 0.75rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 /* ---------------------------Footer--------------------------- */
