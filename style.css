@@ -210,10 +210,27 @@ body>main {
     display: flex;
     background-color: var(--light-gray);
     padding: 0 2rem;
+    gap: 3rem;
 }
 
 #ft-caption {
     display: flex;
+}
+
+#ft-caption-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#ft-caption-container>h3 {
+    font-size: 1.5rem;
+    padding: 2rem 0 1rem;
+}
+
+#ft, .video-row-container, body>nav {
+    padding: 1.5rem 5rem;
 }
 
 .caption-container {
@@ -224,7 +241,6 @@ body>main {
 
 .video-row-container {
     background-color: var(--gray);
-    padding: 1.5rem 1.5rem;
 }
 
 .video-row, #tlc-row {
@@ -236,8 +252,12 @@ body>main {
     grid-template-columns: repeat(12, 1fr);
 }
 
-.tlc-caption {
+.tlc-caption, #ft-caption div:last-child {
     font-size: 0.75rem;
+}
+
+#ft-caption div:last-child {
+    margin-left: 0.5rem;
 }
 
 .video-row {
