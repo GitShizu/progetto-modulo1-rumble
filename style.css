@@ -2,6 +2,7 @@
 
 :root {
     font-size: 16px;
+    font-family: sans-serif;
 }
 
 *{
@@ -34,7 +35,6 @@ body>header {
 
 body>aside {
     grid-area: side;
-    background-color: aquamarine;
 }
 
 body>nav {
@@ -49,10 +49,15 @@ body>main {
 
 body>footer {
     grid-area: foot;
-    background-color: aqua;
 }
 
+/* --------------------------Generic--------------------------- */
 
+a {
+    text-decoration: none;
+    color: black;
+
+}
 
 /* ---------------------------Header--------------------------- */
 
@@ -65,6 +70,44 @@ body>header {
 body>header>section {
     display: flex;
     align-items: center;
+}
+
+/* ---------------------------Sidebar-------------------------- */
+
+/* To do: check for redundancies */
+
+body>aside {
+    overflow: auto;
+}
+
+body>aside>section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 10%;
+}
+
+body>aside>section>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+a>span {
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+aside>section>h3 {
+
+    font-size: 0.75rem;
+}
+
+.profile-pic>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 /* ---------------------------Footer--------------------------- */
