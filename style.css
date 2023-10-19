@@ -1,5 +1,4 @@
 /* ---------------------------/Layout--------------------------- */
-
 :root {
     font-size: 16px;
     font-family: sans-serif;
@@ -27,7 +26,7 @@ body {
     "side main"
     "side foot"
     ;
-    grid-template-columns: 63px 1fr;
+    grid-template-columns: 70px 1fr;
     grid-template-rows: 70px 60px 1fr 46px;
 }
 
@@ -75,7 +74,7 @@ a {
 body>header {
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 1.25rem;
 }
 
 body>header>section {
@@ -165,17 +164,20 @@ body>nav {
 }
 
 .tag:hover {
-    background-color: rgb(66, 65, 65);
+    background-color: rgb(116, 126, 146);
     color: white;
 }
 /* ---------------------------Sidebar-------------------------- */
 
-/* To do: check for redundancies */
-
 body>aside {
-    overflow: scroll;
+    overflow: auto;
     width: 80px;
     padding: 0 12.5%;
+    scrollbar-color: transparent;
+}
+
+aside::-webkit-scrollbar {
+    color: transparent;
 }
 
 body>aside>section {
@@ -199,21 +201,17 @@ a>span {
 aside>section>h3 {
     font-size: 0.75rem;
 }
-
-aside::-webkit-scrollbar {
-    color: transparent;
-}
 /* ------------------------Main Section------------------------- */
 
 body>main {
-    overflow-y: auto;
+    overflow: auto;
 }
 
 figure>strong {
-    display: -webkit-box;
+    height: 2rem;
+    display:-webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    white-space: nowrap;
     overflow: hidden;
 }
 
@@ -222,6 +220,7 @@ figure>strong {
     background-color: var(--light-gray);
     padding: 0 2rem;
     gap: 3rem;
+    position: relative;
 }
 #ft-img-container {
     width: 45%;
@@ -243,7 +242,7 @@ figure>strong {
     padding: 2rem 0 1rem;
 }
 
-#ft, .video-row-container, body>nav {
+#ft, .video-row-container{
     padding: 1.5rem 5rem;
 }
 
